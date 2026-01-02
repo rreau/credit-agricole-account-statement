@@ -2,17 +2,17 @@ from pathlib import Path
 
 import pdfplumber
 
-from ca_account_statement.adapter.input.pdf.PdfTableExtractor import PdfTableExtractor
-from ca_account_statement.adapter.input.pdf.PdfTextExtractor  import PdfTextExtractor
-from ca_account_statement.adapter.input.pdf.PdfWordsExtractor import PdfWordsExtractor
+from credit_agricole_account_statement.adapter.input.pdf.PdfTableExtractor import PdfTableExtractor
+from credit_agricole_account_statement.adapter.input.pdf.PdfTextExtractor  import PdfTextExtractor
+from credit_agricole_account_statement.adapter.input.pdf.PdfWordsExtractor import PdfWordsExtractor
 
-from ca_account_statement.adapter.input.pdf.parser.EffectiveDateParser import EffectiveDateParser
-from ca_account_statement.adapter.input.pdf.parser.AccountStatementNbrParser import AccountStatementNbrParser
-from ca_account_statement.adapter.input.pdf.parser.table.RowProcessor import RowProcessor
-from ca_account_statement.adapter.input.pdf.parser.ParsingContext import ParsingContext
+from credit_agricole_account_statement.adapter.input.pdf.parser.EffectiveDateParser import EffectiveDateParser
+from credit_agricole_account_statement.adapter.input.pdf.parser.AccountStatementNbrParser import AccountStatementNbrParser
+from credit_agricole_account_statement.adapter.input.pdf.parser.table.RowProcessor import RowProcessor
+from credit_agricole_account_statement.adapter.input.pdf.parser.ParsingContext import ParsingContext
 
-from ca_account_statement.domain.CreditAgricoleMonthlyStatement import CreditAgricoleMonthlyStatement
-from ca_account_statement.application.CreditAgricoleMonthlyStatementFactory import CreditAgricoleMonthlyStatementFactory
+from credit_agricole_account_statement.domain.CreditAgricoleMonthlyStatement import CreditAgricoleMonthlyStatement
+from credit_agricole_account_statement.application.CreditAgricoleMonthlyStatementFactory import CreditAgricoleMonthlyStatementFactory
 
 class PdfDocument:
 

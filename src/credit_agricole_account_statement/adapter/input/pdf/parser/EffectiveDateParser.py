@@ -1,5 +1,5 @@
 import re
-from ca_account_statement.adapter.input.pdf.parser.utils.DateParser import DateParser
+from credit_agricole_account_statement.adapter.input.pdf.parser.utils.DateParser import DateParser
 
 class EffectiveDateParser():
 

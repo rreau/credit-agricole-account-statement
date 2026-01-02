@@ -1,11 +1,11 @@
 from typing import List
 import re
 
-from ca_account_statement.adapter.input.pdf.parser.ParsingContext import ParsingContext
-from ca_account_statement.adapter.input.pdf.parser.table.interfaces.Handler import Handler
-from ca_account_statement.domain.Balances import Balance
-from ca_account_statement.adapter.input.pdf.parser.utils.DateParser import DateParser
-from ca_account_statement.adapter.input.pdf.parser.utils.DecimalParser import DecimalParser
+from credit_agricole_account_statement.adapter.input.pdf.parser.ParsingContext import ParsingContext
+from credit_agricole_account_statement.adapter.input.pdf.parser.table.interfaces.Handler import Handler
+from credit_agricole_account_statement.domain.Balances import Balance
+from credit_agricole_account_statement.adapter.input.pdf.parser.utils.DateParser import DateParser
+from credit_agricole_account_statement.adapter.input.pdf.parser.utils.DecimalParser import DecimalParser
 
 class SoldeHandler(Handler):
     def can_handle(self, row: List[str]) -> bool:

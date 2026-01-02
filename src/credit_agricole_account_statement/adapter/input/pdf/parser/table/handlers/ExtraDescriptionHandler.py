@@ -1,7 +1,7 @@
 from typing import List
 
-from ca_account_statement.adapter.input.pdf.parser.table.interfaces.Handler import Handler
-from ca_account_statement.adapter.input.pdf.parser.ParsingContext import ParsingContext
+from credit_agricole_account_statement.adapter.input.pdf.parser.table.interfaces.Handler import Handler
+from credit_agricole_account_statement.adapter.input.pdf.parser.ParsingContext import ParsingContext
 
 class ExtraDescriptionHandler(Handler):
     def can_handle(self, row: List[str]) -> bool:

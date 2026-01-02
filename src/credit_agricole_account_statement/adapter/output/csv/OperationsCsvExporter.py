@@ -1,7 +1,7 @@
 import csv
 from pathlib import Path
 
-from ca_account_statement.domain.CreditAgricoleMonthlyStatement import CreditAgricoleMonthlyStatement
+from credit_agricole_account_statement.domain.CreditAgricoleMonthlyStatement import CreditAgricoleMonthlyStatement
 
 class OperationsCsvExporter():
 

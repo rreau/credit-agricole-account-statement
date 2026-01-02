@@ -1,1 +1,1 @@
-# credit-agricole-statement-parser
+# credit-agricole-account-statement

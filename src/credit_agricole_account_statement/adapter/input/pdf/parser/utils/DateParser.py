@@ -1,6 +1,6 @@
 from datetime import datetime, date
 
-from ca_account_statement.adapter.input.pdf.parser.utils.Parser import Parser
+from credit_agricole_account_statement.adapter.input.pdf.parser.utils.Parser import Parser
 
 class DateParser(Parser[date]):
     @staticmethod

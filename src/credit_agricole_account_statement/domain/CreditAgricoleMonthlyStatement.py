@@ -2,8 +2,8 @@ from dataclasses import dataclass
 from decimal import Decimal
 from datetime import date
 
-from ca_account_statement.domain.Operations import Operations
-from ca_account_statement.domain.Balances import Balances
+from credit_agricole_account_statement.domain.Operations import Operations
+from credit_agricole_account_statement.domain.Balances import Balances
 
 @dataclass()
 class CreditAgricoleMonthlyStatement:

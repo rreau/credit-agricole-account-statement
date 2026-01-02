@@ -3,9 +3,9 @@ from datetime import date
 from decimal import Decimal
 from typing import Optional
 
-from ca_account_statement.domain.Operations import Operations, Operation
-from ca_account_statement.domain.Balances import Balances, Balance
-from ca_account_statement.domain.CreditAgricoleMonthlyStatement import CreditAgricoleMonthlyStatement
+from credit_agricole_account_statement.domain.Operations import Operations, Operation
+from credit_agricole_account_statement.domain.Balances import Balances, Balance
+from credit_agricole_account_statement.domain.CreditAgricoleMonthlyStatement import CreditAgricoleMonthlyStatement
 
 @dataclass()
 class ParsingContext:
