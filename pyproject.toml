@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "credit-agricole-account-statement"
+dynamic = ["version"]
+description = "Parser for Credit Agricole bank account statements"
+readme = "README.md"
+requires-python = ">=3.12.4"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Romain Réau" }
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+    "pdfplumber==0.11.8"
+]
+
+[tool.hatch.version]
+path = "src/credit_agricole_account_statement/__about__.py"
+
+[tool.hatch.build.targets.wheel]
+package = ["src/credit_agricole_account_statement"]
