@@ -5,7 +5,7 @@ from pathlib import Path
 from credit_agricole_account_statement.application.PdfToCsv import PdfToCsv
 from credit_agricole_account_statement.application.PdfsToCsv import PdfsToCsv
 
-APP_LOGGER_NAME = "ca-statement"
+APP_LOGGER_NAME = "credit_agricole_account_statement"
 logger = logging.getLogger(APP_LOGGER_NAME)
 
 def ensure_output_dir(output: Path) -> None:
@@ -26,7 +26,7 @@ def configure_logging(verbosity: int) -> None:
 
     logging.basicConfig(
         level=level,
-        format="%(levelname)s | %(name)s | %(message)s",
+        format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
     )
 
     logging.getLogger(APP_LOGGER_NAME).setLevel(level)
