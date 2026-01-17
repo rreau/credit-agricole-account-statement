@@ -48,12 +48,18 @@ def main():
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     # pdf-to-csv
-    pdf_to_csv = subparsers.add_parser("pdf2csv")
+    pdf_to_csv = subparsers.add_parser(
+        "pdf2csv",
+        help="Convert a single PDF statement to CSV"
+    )
     pdf_to_csv.add_argument("input", type=Path)
     pdf_to_csv.add_argument("-o", "--output", type=Path, required=True)
 
     # pdfs-to-csv
-    pdfs_to_csv = subparsers.add_parser("pdfs2csv")
+    pdfs_to_csv = subparsers.add_parser(
+        "pdfs2csv",
+        help="Convert all PDF statements in a directory to a single CSV"
+    )
     pdfs_to_csv.add_argument("input_dir", type=Path)
     pdfs_to_csv.add_argument("-o", "--output", type=Path, required=True)
 
