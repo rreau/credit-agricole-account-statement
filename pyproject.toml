@@ -7,7 +7,7 @@ name = "credit-agricole-account-statement"
 dynamic = ["version"]
 description = "Parser for Credit Agricole bank account statements"
 readme = "README.md"
-requires-python = ">=3.12.4"
+requires-python = ">=3.10"
 license = "MIT"
 keywords = []
 authors = [
@@ -23,6 +23,9 @@ classifiers = [
 dependencies = [
     "pdfplumber==0.11.8"
 ]
+
+[project.scripts]
+ca-statement = "credit_agricole_account_statement.cli.main:main"
 
 [tool.hatch.version]
 path = "src/credit_agricole_account_statement/__about__.py"
