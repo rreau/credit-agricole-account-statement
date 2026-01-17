@@ -35,6 +35,10 @@ class PdfDocument:
 
             for page in pdf.pages:
                 current_table = self._process_page(page)
+                if current_table is None:
+                    print(f"[WARNING] No table detected on page {page.page_number} in '{self.path.name}'")
+                    continue
+
                 pdf_table.extend(current_table)
 
             pdf_table.reverse()
