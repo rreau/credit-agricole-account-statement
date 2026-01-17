@@ -11,9 +11,6 @@ from credit_agricole_account_statement.adapter.input.pdf.parser.AccountStatement
 from credit_agricole_account_statement.adapter.input.pdf.parser.table.RowProcessor import RowProcessor
 from credit_agricole_account_statement.adapter.input.pdf.parser.ParsingContext import ParsingContext
 
-from credit_agricole_account_statement.domain.CreditAgricoleMonthlyStatement import CreditAgricoleMonthlyStatement
-from credit_agricole_account_statement.application.CreditAgricoleMonthlyStatementFactory import CreditAgricoleMonthlyStatementFactory
-
 class PdfDocument:
 
     def __init__(self, path: Path):
