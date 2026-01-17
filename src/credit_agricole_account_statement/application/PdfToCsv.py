@@ -9,4 +9,4 @@ class PdfToCsv:
     def execute(pdf_path: Path, csv_path:Path):
         parsing_context = PdfDocument(pdf_path).parse()
         statement = CreditAgricoleMonthlyStatementFactory.build(parsing_context)
-        OperationsCsvExporter.export(csv_path, statement)
+        OperationsCsvExporter.export(csv_path, statement.operations)

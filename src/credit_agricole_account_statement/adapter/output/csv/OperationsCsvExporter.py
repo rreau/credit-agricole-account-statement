@@ -1,13 +1,12 @@
 import csv
 from pathlib import Path
 
-from credit_agricole_account_statement.domain.CreditAgricoleMonthlyStatement import CreditAgricoleMonthlyStatement
+from credit_agricole_account_statement.domain.Operations import Operations
 
 class OperationsCsvExporter():
 
     @staticmethod
-    def export(filepath: Path, statement: CreditAgricoleMonthlyStatement, delimiter: str = ';') -> None:
-        operations = statement.operations
+    def export(filepath: Path, operations: Operations, delimiter: str = ';') -> None:
         with open(filepath, mode="w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f, delimiter=delimiter)
 
