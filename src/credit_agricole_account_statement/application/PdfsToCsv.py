@@ -28,7 +28,7 @@ class PdfsToCsv:
 
         for pdf_file in pdf_files:
             if not pdf_file.is_file():
-                logger.debug("Skipping non-file path: %s", pdf_file)
+                logger.warning("Skipping non-file path: %s", pdf_file)
                 continue
             
             logger.info("Processing PDF: %s", pdf_file.name)
