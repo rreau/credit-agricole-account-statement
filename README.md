@@ -1,10 +1,10 @@
 # Crédit Agricole Account Statement Parser
 
-This library allows you to **extract transactions from Crédit Agricole PDF account statements** downloaded **from their website**. It converts PDF statements into structured data that can be exported to CSV or processed directly in Python.  
+This library allows you to **extract transactions from Crédit Agricole PDF account statements** obtained **from their website**. It converts PDF statements into structured data that can be exported to CSV or processed directly in Python.  
 
 > ⚠️ Note: This library does **not** support scanned PDFs or image-based statements. OCR is not available at the moment, but may be added in a future release.
 
-## Command Line Interface
+## CLI
 
 ```bash
 root@root:~$ ca-statement --help
